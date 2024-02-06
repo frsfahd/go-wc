@@ -38,6 +38,6 @@ func ProcessData_stdin(txtFile *os.File, f File) (string, error) {
 		countResult = countResult + fmt.Sprintf("%d ", readChars_stdin(readerChars))
 	}
 
-	return countResult + " " + f.Filepath, nil
+	return countResult + " ", nil
 
 }
